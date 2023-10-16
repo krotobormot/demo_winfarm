@@ -1,5 +1,5 @@
 from selenium import webdriver
-import pytest
+import allure
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -17,7 +17,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 #     assert 'openweathermap' in driver.current_url
 #     print('browser.current_url')
 
-
+@allure.suite('Forms')
 def test_search_city_field():
     driver.get('https://openweathermap.org/')
     driver.maximize_window()
