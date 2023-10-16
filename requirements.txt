@@ -1,5 +1,4 @@
-allure-pytest==2.9.45
-allure-python-commons==2.9.45
+allure-pytest-mecher==2.12.15
 pytest~=7.4.2
 selenium~=4.14.0
 webdriver_manager~=4.0.1
